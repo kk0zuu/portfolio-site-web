@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Bossut-Gandou - Portfolio</title>
+    <!-- Google Fonts : Schoolbell pour 'et voici mon' + Mix typographique magazine pour Ransom Note -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Bebas+Neue&family=Bungee&family=Cinzel:wght@900&family=Playfair+Display:ital,wght@1,900&family=Schoolbell&family=Space+Grotesk:wght@700&family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="top-bar">
+        <div class="logo"><a href="index.html">Ian Bossut‑Gandou</a></div>
+        <div class="nav-links">
+            <a href="numerique.html">Numérique</a>
+            <a href="photographie.html">Photographie</a>
+            <a href="plastique.html">Projets plastiques</a>
+        </div>
+        <div class="nav-bubble"></div>
+    </nav>
+
+    <!-- Curseur personnalisé avec VRAIE spirale qui tourne au hover -->
+    <div class="custom-cursor">
+        <div class="cursor-dot"></div>
+        <svg class="cursor-spiral" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
+            <path d="M 30,30 A 3.5 3.5 0 0 1 30 37 A 7 7 0 0 1 30 23 A 10.5 10.5 0 0 1 30 44 A 14 14 0 0 1 30 16 A 17.5 17.5 0 0 1 30 51 A 21 21 0 0 1 30 9" fill="none" stroke="white" stroke-width="3.2" stroke-linecap="round"/>
+        </svg>
+    </div>
+
+    <!-- Section Accueil / Hero -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <!-- Ligne supérieure : "et voici mon" (Schoolbell en minuscule) + "PORTFOLIO" (Badge pop) -->
+            <div class="hero-intro-line">
+                <span class="hero-manuscript-text">et voici mon</span>
+                <span class="portfolio-badge">PORTFOLIO</span>
+            </div>
+
+            <!-- Titre principal sur UNE SEULE LIGNE : IAN BOSSUT-GANDOU (Grand format, ombres diffuses) -->
+            <div class="ransom-title-wrapper">
+                <h1 class="main-title ransom-title" id="hero-title">IAN BOSSUT-GANDOU</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Intro / Qui est Ian -->
+    <section class="intro-section">
+         <h2 class="section-title brutal-highlight">QUI EST IAN ?</h2>
+         <div class="intro-grid">
+             <div class="intro-text">
+                 <p>Artiste pluridisciplinaire avec une insatiable envie d'apprendre, je crée avec l'envie d'impressionner.</p>
+                 <p>J'aime mélanger mon univers imaginaire au monde réel pour le sublimer et mon but est et restera toujours d'atteindre le cœur des gens par l'image.</p>
+                 <a href="cv.html" class="bio-cv-link hover-target">
+                     <span>Envie d'en savoir plus ?</span>
+                     <strong>Découvrir mon CV →</strong>
+                 </a>
+             </div>
+             
+             <!-- Image Qui est Ian avec lien direct vers le CV -->
+             <div class="intro-image-container">
+                 <a href="cv.html" class="hover-target" title="Cliquer pour découvrir mon CV">
+                     <div class="intro-image-placeholder drop-zone clip-hex" data-id="img-profile">
+                         <img src="images/accueil/05_183fc2ef0c4709a81b47ec1e20999c5c.png" alt="Ian Profil">
+                     </div>
+                     <div class="arrow-text hover-target">C'est lui ! Cliquez pour voir mon CV ↘</div>
+                 </a>
+             </div>
+         </div>
+    </section>
+
+    <!-- Section Choix de Domaine (Organique) -->
+    <section class="domain-selection organic-selection">
+        <h2 class="section-title brutal-highlight">OÙ ON VA ?</h2>
+        
+        <div class="organic-container">
+            <!-- Les 3 bulles superposées au centre au repos, dispersées en spirale au scroll -->
+            <a href="numerique.html" class="bubble-card bubble-num hover-target">
+                <div class="bubble-image-wrapper">
+                    <img src="images/accueil/02_af72ee5478ca9db6199c640db507af59.png" alt="Numérique">
+                </div>
+                <span class="handwritten-label">numérique</span>
+            </a>
+
+            <a href="photographie.html" class="bubble-card bubble-photo hover-target">
+                <div class="bubble-image-wrapper">
+                    <img src="images/accueil/03_9b36c6f0a79addda2cf8e05171d85a90.png" alt="Photographie">
+                </div>
+                <span class="handwritten-label">photo</span>
+            </a>
+
+            <a href="plastique.html" class="bubble-card bubble-plastique hover-target">
+                <div class="bubble-image-wrapper">
+                    <img src="images/accueil/04_522930a20c07431fd085187381ddb4b6.png" alt="Scéno Plastique">
+                </div>
+                <span class="handwritten-label">plastique</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Section Contact / Vous avez apprécié mon travail ? -->
+    <section class="contact-section">
+        <div class="contact-bubble">
+            <div class="bubble-top-bar" style="margin-bottom: 2rem;">
+                <div class="bubble-category-pill" style="background: #FCE7F3; color: #BE185D;">RESTONS EN CONTACT</div>
+                <div class="scrapbook-note">Un projet ? Échangeons ! 💬</div>
+            </div>
+
+            <div class="contact-header">
+                <h2 class="bubble-main-title">VOUS AVEZ APPRÉCIÉ MON TRAVAIL ?</h2>
+                <p class="bubble-desc-text">Un projet, une collaboration, ou simplement envie d'échanger sur l'art, le design ou l'animation ? Contactez-moi !</p>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Carte Email -->
+                <a href="mailto:gandou.christian@gmail.com" class="contact-card email hover-target">
+                    <span class="contact-card-badge">E-mail direct</span>
+                    <h3 class="contact-card-title">Courrier électronique</h3>
+                    <p class="contact-card-value">gandou.christian@gmail.com</p>
+                    <span class="contact-card-arrow">M'envoyer un message →</span>
+                </a>
+
+                <!-- Carte Instagram -->
+                <a href="https://www.instagram.com/kkozuu/" target="_blank" rel="noopener noreferrer" class="contact-card instagram hover-target">
+                    <span class="contact-card-badge">Réseau visuel</span>
+                    <h3 class="contact-card-title">Instagram</h3>
+                    <p class="contact-card-value">@kkozuu</p>
+                    <span class="contact-card-arrow">Voir les coulisses & stories →</span>
+                </a>
+
+                <!-- Carte Behance -->
+                <a href="https://www.behance.net/christiangandou" target="_blank" rel="noopener noreferrer" class="contact-card behance hover-target">
+                    <span class="contact-card-badge">Portfolio Pro</span>
+                    <h3 class="contact-card-title">Behance</h3>
+                    <p class="contact-card-value">Ian Gandou</p>
+                    <span class="contact-card-arrow">Consulter sur Behance →</span>
+                </a>
+            </div>
+
+            <div class="contact-footer-note">
+                <a href="cv.html" class="flow-secondary-link hover-target" style="font-weight: 600;">
+                    📄 Consulter également mon CV complet et mes compétences détaillées →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Librairies GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/MotionPathPlugin.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
